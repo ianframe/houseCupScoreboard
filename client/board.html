@@ -1,0 +1,40 @@
+<head>
+  <title>House Cup Scoreboard</title>
+</head>
+
+<body>
+</body>
+
+<template name="main">
+	<h1 class="potterFont">The AP CS House Cup</h1>
+	{{> scoreboard}}
+	<hr/>
+	{{> statusUpdate}}
+	<hr/>
+	{{> newsfeed}}
+</template>
+
+<template name="newsfeed">
+	<h2 class="statusUpdate">Status Updates</h2>
+	{{#each getUpdates}}
+		<p class="statusUpdate">{{info}}</p>
+	{{/each}}
+</template>
+
+
+<template name="scoreboard">
+	<div class="center-block">
+			{{#each getScores}}
+			<p class="houseName {{name}} {{selectedClass}}">{{name}} : {{points}}</p>
+			{{/each}}
+	</div>
+</template>
+
+<template name="statusUpdate">
+	<form>
+		<div class="form-group inputHolder">
+			<input type="text" class="form-control" name="statusUpdate" autocomplete="off">
+		</div>
+	</form>
+</template>
+

@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Harry-Potter';
+    src:url('/fonts/potter/Harry-Potter.ttf.woff') format('woff'),
+        url('/fonts/potter/Harry-Potter.ttf.svg#Harry-Potter') format('svg'),
+        url('/fonts/potter/Harry-Potter.ttf.eot'),
+        url('/fonts/potter/Harry-Potter.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.potterFont{
+	font-family: 'Harry-Potter';
+}
+
+*{
+	padding: 0.3em;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+html body{
+	font-family: 'Harry-Potter';
+	background-color: #2B2B2B;
+	color: white;
+}
+
+a{
+	color: white;
+}
+
+.btn{
+	border-radius: 24px;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.Slytherin{
+	background-color: #24471D;
+	color: white;
+}
+
+.btn-slytherin{
+	background-color: #24471D;
+	color: white;
+}
+
+.Gryffindor{
+	background-color: #740001;
+	color: #d3a625;
+}
+
+.btn-gryffindor{
+	background-color: #740001;
+	color: #d3a625;
+}
+
+.Hufflepuff{
+	background-color: #FFE658;
+	color: black;
+}
+
+.btn-hufflepuff{
+	background-color: #FFE658;
+	color: black;
+}
+
+.Ravenclaw{
+	background-color: #0e1a40;
+	color: #946b2d;
+}
+
+.btn-ravenclaw{
+	background-color: #0e1a40;
+	color: #946b2d;
+}
+
+h1{
+	font-size: 80px;
+}
+
+.houseName{
+	font-size: 40px;
+}
+
+p.houseName{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  padding-top: 20px;
+}
+
+.inputHolder{
+  text-align: center;
+}
+
+input[type="text"]{
+  font-size: 36px;
+  font-family: Verdana;
+  height: 60px;
+}
+h2.statusUpdate{
+  font-family: Verdana;
+}
+p.statusUpdate{
+  font-size: 18px;
+  font-family: Verdana;
+}
+
+.selected{
+  border: 3px solid #fa25fa;
+}
