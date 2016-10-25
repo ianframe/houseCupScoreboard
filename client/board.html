@@ -3,7 +3,7 @@
 </head>
 
 <body>
-</body>
+	</body>
 
 <template name="main">
 	<h1 class="potterFont">The AP CS House Cup</h1>
@@ -27,6 +27,11 @@
 			{{#each getScores}}
 			<p class="houseName {{name}} {{selectedClass}}">{{name}} : {{points}}</p>
 			{{/each}}
+			<br>
+			<div class="btn-group">
+				<button type="button" class="btn btn-success" id="add5Button">Add 5</button>
+				<button type="button" class="btn btn-danger" id="lose5Button">Lose 5</button>
+			</div>
 	</div>
 </template>
 
